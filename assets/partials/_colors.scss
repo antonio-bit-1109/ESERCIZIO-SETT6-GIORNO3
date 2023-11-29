@@ -1,0 +1,14 @@
+$text-color: #f4f4f4;
+$button-blue: #0e6cff;
+$button-orange: #ff8700;
+$button-green: #4caf50;
+
+$bg-hero: #640fc5;
+
+@mixin bg-color($bg-color: black) {
+    background-color: $bg-color;
+}
+
+.bg-hero {
+    @include bg-color($bg-hero);
+}

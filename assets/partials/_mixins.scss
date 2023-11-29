@@ -1,0 +1,37 @@
+@mixin floating($borderRadius: 35px, $BoxShadow: 5px 5px 5px black, $border: 1px solid blue) {
+    border-radius: $borderRadius;
+    box-shadow: $BoxShadow;
+    border: $border;
+}
+
+.custom-floating {
+    @include floating(99px, 10px 10px 10px yellow, 3px solid green);
+}
+
+@mixin customBorderRadius($topLeft: 0, $topRight: 0, $bottomRight: 0, $bottomLeft: 0) {
+    border-top-left-radius: $topLeft;
+    border-top-right-radius: $topRight;
+    border-bottom-right-radius: $bottomRight;
+    border-bottom-left-radius: $bottomLeft;
+}
+
+.custom-rounded {
+    @include customBorderRadius(50px, 50px, 50px, 50px);
+}
+
+.another-rounded {
+    @include customBorderRadius(5px, 15px, 25px, 35px);
+}
+
+.very-rounded {
+    @include customBorderRadius(99px, 99px, 99px, 99px);
+}
+
+@mixin dimensions($Maxwidth: auto, $Maxheight: auto) {
+    max-width: $Maxwidth;
+    max-height: $Maxheight;
+}
+
+.dimensionsPhoto {
+    @include dimensions(25%, 25%);
+}

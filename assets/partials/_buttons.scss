@@ -1,0 +1,19 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+
+    &-blue {
+        background-color: $button-blue;
+    }
+    &-orange {
+        background-color: $button-orange;
+    }
+    &-green {
+        background-color: $button-green;
+    }
+}

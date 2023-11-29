@@ -1,0 +1,13 @@
+$font-variable: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+//  creo tanti font size con un ciclo:
+
+@for $i from 1 through 10 {
+    .font-size-#{$i} {
+        font-size: $i * (0.5rem);
+    }
+}
+
+.titolone {
+    @extend .font-size-10;
+}

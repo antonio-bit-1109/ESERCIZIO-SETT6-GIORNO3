@@ -1,0 +1,44 @@
+@import "./assets/partials/reset";
+@import "./assets/partials/colors";
+@import "./assets/partials/fonts";
+@import "./assets/partials/spaces";
+@import "./assets/partials/buttons";
+@import "./assets/partials/mixins";
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.width {
+    max-width: 100%;
+}
+
+body {
+    header {
+        nav {
+            .logo {
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
